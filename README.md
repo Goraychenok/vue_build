@@ -1,24 +1,69 @@
-# architector-app
+# vue-build
 
 ## Project setup
+
+### Версия ноды 14
+
+
+## Запуск для разработки
+
+### Перед запускам установите
+
+```
+npm install -g json-server
+```
+
+```
+npm install -g concurrently
+```
+### Установите все зависимости
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### И запустите
+
 ```
-npm run serve
+npm start
 ```
 
-### Compiles and minifies for production
+## Запуск для сборки
+
+### Перед запускам установите
+
 ```
-npm run build
+npm install -g json-server
 ```
 
-### Lints and fixes files
 ```
-npm run lint
+npm install -g concurrently
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+npm install -g serve
+```
+### И запустите
+
+```
+npm run start_prod
+```
+
+## Адрес  приложения
+```
+http://localhost:8080/
+```
+
+## Адрес json сервера
+
+```
+http://localhost:3000/
+```
+
+
+
+
+
+
+
+
+
