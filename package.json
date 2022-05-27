@@ -5,11 +5,23 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "json-server": "json-server --watch db.json",
+    "start": "concurrently \"npm run json-server\" \"npm run serve\" ",
+    "start_prod": "concurrently \"npm run json-server\" \"serve -s -p 8080 dist\""
   },
   "dependencies": {
+    "@mdi/font": "5.9.55",
+    "axios": "^0.27.2",
+    "concurrently": "^7.2.1",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "json-server": "^0.17.0",
+    "roboto-fontface": "*",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.15",
+    "vuetify": "^3.0.0-beta.0",
+    "vuex": "^4.0.2",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -17,8 +29,20 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "bemto.pug": "^2.1.0",
+    "bootstrap": "^5.1.3",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "html-loader": "^3.1.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "vue-cli-plugin-vuetify": "~2.5.0",
+    "webpack-plugin-vuetify": "^2.0.0-alpha.0"
   },
   "eslintConfig": {
     "root": true,
